@@ -13,7 +13,7 @@ const Tasks = function ({ tasks, onDelete, onToggle }) {
 
 // Property types validation
 Tasks.propTypes = {
-  tasks: PropTypes.arrayOf.isRequired,
+  tasks: PropTypes.arrayOf(Task).isRequired,
   onDelete: PropTypes.func.isRequired,
   onToggle: PropTypes.func.isRequired,
 };

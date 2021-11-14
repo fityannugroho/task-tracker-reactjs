@@ -21,7 +21,7 @@ Task.defaultProps = {
 
 // Property types validation
 Task.propTypes = {
-  task: PropTypes.string,
+  task: PropTypes.shape,
   onDelete: PropTypes.func.isRequired,
   onToggle: PropTypes.func.isRequired,
 };
